@@ -13,8 +13,8 @@ echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab`
 ```
 
 ### Set swappiness to 90 for aggressive swap
-# As t2.micro only comes with 1GB RAM,
-we have to add swap-memory for jenkins to work properly
+As t2.micro only comes with 1GB RAM, we have to add swap-memory for jenkins to work properly
+
 ```
 sudo sysctl vm.swapniess=90`
 echo 'vm.swappiness=90' | sudo tee -a /etc/sysctl.conf`
